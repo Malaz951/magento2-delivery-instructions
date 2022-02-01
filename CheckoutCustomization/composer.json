@@ -1,0 +1,36 @@
+{
+    "name": "best-response-media/module-checkout-custmization",
+    "description": "Adding customization to checkout",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Malaz Alhafez",
+            "email": "mlaz.alhafez@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "magento/framework": "^102.0|^103.0",
+        "magento/module-catalog": "*",
+        "magento/module-sales": "*",
+        "obelink/module-quote": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "BestResponseMedia\\CheckoutCustomization\\": ""
+        }
+    },
+    "version": "1.0.0"
+}

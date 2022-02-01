@@ -1,0 +1,12 @@
+<?php
+/** @var $block \Magento\Sales\Block\Adminhtml\Order\View */
+?>
+<?php
+$deliveryInstructions = $block->getOrder()->getData('delivery_instructions');
+?>
+<?php if (isset($deliveryInstructions)): ?>
+    <div>
+        <h2><?= $block->escapeHtml(__('Delivery Instructions')) ?></h2>
+        <span><?= $deliveryInstructions ?></span>
+    </div>
+<?php endif; ?>
